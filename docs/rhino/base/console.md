@@ -296,3 +296,37 @@ console.setMaxLines(500);
 ```
 
 ## console.setBackground()
+
+## console.emitter
+
+**[v7.0.4 新增]**
+
+- \{ EventEmiiter } 此对象在控制台打印内容时触发一些事件
+
+```js
+// 监听控制台的所有输出
+console.emitter.on("println", (log, level, levelString) => {
+  //请勿在此回调中向控制台打印内容，否则将会无限循环
+  toast(log);
+});
+```
+
+- 事件：'VERBOSE' | 'DEBUG' | 'INFO' | 'WARN' | 'ERROR' | 'ASSERT'
+
+  这些事件对应各种日志级别的日志
+
+```js
+//仅获得"WARN"的日志
+console.emitter.on("WARN", (log, level, levelString) => {
+  //请勿在此回调中向控制台打印内容，否则将会无限循环
+  toast(log);
+});
+```
+
+## console.globalEmitter
+
+**[v7.0.4 新增]**
+
+- \{ EventEmiiter } 全局控制台的 EventEmiiter 对象
+
+使用方法同上，获得的日志内容会与在 app 控制台中看到的一样，包括其他脚本的打印内容
