@@ -193,6 +193,11 @@ console.setPosition(100, 100);
 
 **[v4.1.0 新增]**
 
+**[v7.0.2 弃用]**
+
+在 v7.0.4 之后除`file`选项外其他选项将不起作用，作为代替使用[console.emitter](#consoleemitter)与
+[console.globalEmitter](#consoleglobalemitter)
+
 - `config` \{Object} 日志配置，可选的项有：
   - `file` \{string} 日志文件路径，将会把日志写入该文件中
   - `maxFileSize` \{number} 最大文件大小，单位字节，默认为 512 \* 1024 (512KB)

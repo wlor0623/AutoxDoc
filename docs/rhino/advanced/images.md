@@ -536,6 +536,12 @@ if (!requestScreenCapture()) {
 
 该函数也可以作为全局函数使用。
 
+## images.stopScreenCapturer()
+
+[v6.5.8 新增]
+
+停止截图权限并释放相关资源，若之后再调用`images.captureScreen()`截图会抛出错误
+
 ## images.captureScreen()
 
 - `return` \{Image}
