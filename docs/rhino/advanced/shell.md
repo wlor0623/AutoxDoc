@@ -17,6 +17,7 @@ shell 即 Unix Shell，在类 Unix 系统提供与操作系统交互的一系列
 
 - cmd \{string} 要执行的命令
 - root \{Boolean} 是否以 root 权限运行，默认为 false。
+- return \{[ShellResult](#shellresult)} 运行结果
 
 一次性执行命令 cmd, 并返回命令的执行结果。返回对象的其属性如下:
 
@@ -66,7 +67,14 @@ sh.exit();
 
 注意，命令执行是"异步"的、非阻塞的。也就是不会等待命令完成后才继续向下执行。
 
-尽管这样的设计使用起来有很多不便之处，但受限于终端模拟器，暂时没有解决方式；如果后续能找到解决方案，则将提供`Shell.execAndWaitFor`函数。
+## Shell.execAndWaitFor(cmd)
+
+v7.1.1 新增
+
+- `cmd` \{string} 要执行的命令
+- return \{[ShellResult](#shellresult)} 运行结果
+
+执行 shell 命令并等待运行结果
 
 ## Shell.exit()
 
@@ -108,6 +116,14 @@ while (true) {
 }
 sh.exit();
 ```
+
+## ShellResult
+
+运行 shell 得到的结果，是包含如下属性的对象
+
+- code \{number} 返回码。执行成功时为 0，失败时为非 0 的数字。
+- result \{string} 运行结果(stdout 输出结果)
+- error \{string} 运行的错误信息(stderr 输出结果)。例如执行需要 root 权限的命令但没有授予 root 权限会返回错误信息"Permission denied"。
 
 # 附录: shell 命令简介
 
