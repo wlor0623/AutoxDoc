@@ -18,11 +18,10 @@ jobs:
       - name: checkout v7-api
         uses: actions/checkout@v4
         with:
-          repository: kkevsekk1/AutoX
+          repository: aiselp/AutoX
           path: Autox-v7-api
           sparse-checkout: |
             autojs/src/js-api
-          ref: dev-v7
       - uses: actions/setup-node@v4
         with:
           node-version: 20
