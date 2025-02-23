@@ -18,7 +18,7 @@ AutoX.js 使用 JavaScript 作为脚本语言，目前使用 [Rhino 1.7.13](http
 
 # AutoX.js 下载地址
 
-在 [Github Releases](https://github.com/kkevsekk1/AutoX/releases) 下载
+在 [文章](https://mp.weixin.qq.com/s/hVyWYyZz_K71dp8H3X-qtg) 下载
 
 # AutoX.js 的功能
 

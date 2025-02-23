@@ -21,7 +21,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className={buttonClass}
-            to="https://github.com/kkevsekk1/AutoX/releases">
+            to="https://mp.weixin.qq.com/s/hVyWYyZz_K71dp8H3X-qtg">
             软件下载
           </Link>
           <Link

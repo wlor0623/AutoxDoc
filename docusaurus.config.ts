@@ -81,12 +81,19 @@ const config: Config = {
           sidebarId: 'nodejs',
           label: '第二代api文档(v7)',
         },
-        // { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/kkevsekk1/AutoX',
-          label: 'GitHub',
+          type: 'docSidebar',
           position: 'right',
+          sidebarId: 'nodejs',
+          label: '公众号:代码简单说',
+          href:"https://pic.dooo.fun/gzh_qrcode.jpg"
         },
+        // { to: '/blog', label: 'Blog', position: 'left' },
+        // {
+        //   href: 'https://github.com/kkevsekk1/AutoX',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
@@ -108,34 +115,27 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: '公众号:代码简单说',
+              href: 'https://mp.weixin.qq.com/s/hVyWYyZz_K71dp8H3X-qtg',
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+           
           ],
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/kkevsekk1/AutoX',
-            },
-          ],
-        },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {
+        //       label: 'Blog',
+        //       to: '/blog',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/kkevsekk1/AutoX',
+        //     },
+        //   ],
+        // },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 公众号:代码简单说.`,
     },
     prism: {
       theme: prismThemes.github,
