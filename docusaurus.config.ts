@@ -3,12 +3,12 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Autox.js',
+  title: 'Autox.js | 公众号:代码简单说',
   tagline: '不需要Root权限 的 JavaScript 自动化软件',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://autoxjs-doc.dooo.fun',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -88,6 +88,14 @@ const config: Config = {
           label: '公众号:代码简单说',
           href:"https://pic.dooo.fun/gzh_qrcode.jpg"
         },
+        {
+          type: 'docSidebar',
+          position: 'right',
+          sidebarId: 'nodejs',
+          label: 'CSDN',
+          href:"https://blog.csdn.net/weixin_41961749"
+        },
+        
         // { to: '/blog', label: 'Blog', position: 'left' },
         // {
         //   href: 'https://github.com/kkevsekk1/AutoX',
